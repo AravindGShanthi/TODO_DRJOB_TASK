@@ -36,7 +36,7 @@ function ToDo() {
 
   console.log('TODOS: ', todos);
   return <div>
-    <div>
+    <div style={{ width: '100vh', background: 'pink', padding: '10px' }}>
       <form onSubmit={handleTodoSubmit}>
         <input value={todo} onChange={(e) => setTodo(prevValue => e.target.value)} />
         <button>+ Add</button>
